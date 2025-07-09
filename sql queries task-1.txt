@@ -1,0 +1,38 @@
+create database Practice;
+
+	use Practice;
+
+create table Bala(Regno int,name varchar(20),contact bigint);
+
+select * from Bala;
+
+insert into Bala(regno,name,contact)values(1,'Bala',9585061797),(2,'Raja',6385523440);
+
+select * from bala;
+
+alter table bala add age int;
+
+update bala set age=21;
+
+update bala set age=20 where Name="raja";
+
+alter table bala add address varchar(30);
+
+alter table bala modify Address varchar(20);
+
+ALTER TABLE bala CHANGE address City VARCHAR(20);
+
+ALTER TABLE bala DROP COLUMN city;
+
+rename table bala to practice;
+
+select * from practice;
+
+delete from practice where regno = 2
+
+truncate table practice;
+
+drop table practice;
+
+
+
